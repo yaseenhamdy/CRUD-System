@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="text-center py-4">CRUD System</h1>
+    <div class="container shadow py-3 px-3 my-5 rounded-3 bg-success">
+        <input type="text" placeholder="Enter Product Name" id="proName" class="form-control my-4">
+        <input type="number" placeholder="Enter Product Pice" id="proPrice" class="form-control my-4">
+        <textarea class="form-control my-4" id="proDesc" cols="30" rows="5"
+            placeholder="Enter Product Description"></textarea>
+        <button onclick="product()" class="btn btn-info text-white" id="add">Add Product<i
+                class="fa-solid fa-plus ps-4"></i></button>
+        <button onclick="updateProduct()" class="btn btn-dark text-white d-none" id="update">Update Product<i
+                class="fa-solid fa-pen ps-4"></i></button>
+        <button onclick="clearProducts()" class="btn btn-warning text-white">Clear Table<i
+                class="fa-solid fa-circle-check ps-4"></i></button>
+        <div class="d-flex justify-content-center">
+            <input id="search" onkeyup="searchProduct(this.value)" type="text" placeholder="Search"
+                class="form-control my-4 w-25 text-center mx-2">
+            <i class="fa-solid fa-magnifying-glass text-white mx-3"></i>
+        </div>
+    </div>
+    <table class=" text-center table table-success table-hover container w-75"id="info">
+        <thead>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Action</th>
+        </thead>
+        <tbody id="demo">
+
+        </tbody>
+    </table>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

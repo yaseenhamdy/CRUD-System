@@ -1,0 +1,22 @@
+
+h1{
+    color: #FF305B;
+    font-family: 'Pacifico', cursive;
+    line-height: 60px;
+    font-weight: 500;
+    font-size: 50px;
+    background: linear-gradient(to right, #3ea55c, #b5ac49);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+span{
+    background-color: rgba(255,251,0);
+}
+body div div i{
+    padding-top: 35px;
+}
+@media all and (max-width:576px){
+   #info{
+        width: 100% !important; 
+    }
+}
